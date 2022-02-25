@@ -183,6 +183,9 @@ input[type="text"] {
     font-size: 23px;
   }
   .weather {
+    position: absolute;
+    bottom: 8px;
+    right: 50px;
     font-size: 23px;
     text-align: right;
     margin-left: 0;
