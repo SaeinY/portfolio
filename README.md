@@ -1,7 +1,6 @@
 # Momentum clone
-+ url : <b>http://dayoung-lee.github.io/liveDemo/p2/index.html</b>
++ url : <b>https://saeiny.github.io/portfolio/</b>
 - This project 2 is a cloning website which is 'Momentum'.
-  + (Momentum : https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en)
 - Front-end : HTML, CSAS, Javascript(VanillaJS)
 
 ### function
