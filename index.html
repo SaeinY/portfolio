@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">    
+    <title>To Do List</title>
+    <meta charset="utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="js-clock clock">
+            <h3>Date</h3>
+            <h1>00:00:00</h1>            
+        </div>
+
+        <form class="js-form form">
+            <input type="text" class="input" placeholder="What is your name?"
+            onfocus = "this.placeholder=''" onblur="this.placeholder='What is your name?'">
+        </form>       
+        <h4 class="js-grettings grettings">Hello, user!</h4>      
+        <br>
+
+        <div class="toDoBox">
+            <form class="js-toDoForm toDoForm">
+                <input type="text" placeholder="I need to do..." 
+                    onfocus = "this.placeholder=''" onblur="this.placeholder='I need to do...'"/>
+            </form><br>
+            <ul class="js-toDoList toDoList"></ul>     
+            <span class="js-weather weather"></span>  
+        </div>            
+    </div> 
+    
+
+    <script src="js/clock.js"></script>
+    <script src="js/gretting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+    
+</body>
+</html>

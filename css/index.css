@@ -1,0 +1,266 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #bdc3c7;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.5s linear;
+  font-family: Franklin Gothic Medium;
+}
+.clock h3 {
+  color: #ecf0f1;
+  font-size: 70px;
+  text-align: right;
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+.clock h1 {
+  color: #ecf0f1;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 0x;
+  margin-bottom: 0px;
+}
+
+h4 {
+  color: #ecf0f1;
+  font-size: 60px;
+  text-align: center;
+  margin: 0px;
+}
+
+.form,
+.grettings {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.toDoForm {
+  text-align: center;
+}
+.showing {
+  display: block;
+}
+
+.toDoList {
+  text-align: left;
+}
+ul {
+  color: #ecf0f1;
+  text-align: left;
+}
+li {
+  list-style-type: none;
+}
+li span {
+  padding-left: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #f2f2f2;
+  background: transparent;
+}
+
+input[type="text"] {
+  color: white;
+  font-size: 25px;
+}
+::placeholder {
+  color: #f2f2f2;
+  opacity: 1;
+  font-size: 30px;
+}
+.weather {
+  color: #ecf0f1;
+  margin-left: 70%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.toDoList button {
+  /* CSS */
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 8px 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.toDoList button:hover,
+.toDoList button:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+.toDoList button:active {
+  opacity: 0.5;
+}
+
+.toDoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  max-height: 410px;
+  padding: 30px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .clock h3 {
+    margin-top: 60px;
+    font-size: 50px;
+  }
+  .clock h1 {
+    font-size: 70px;
+  }
+  h4 {
+    font-size: 50px;
+  }
+  .toDoList {
+    margin-left: 200px;
+  }
+  .toDoBox {
+    text-align: center;
+    display: block;
+    width: auto;
+    max-height: 388px;
+  }
+  .toDoBox input {
+    font-size: 20px;
+  }
+  .toDoBox button {
+    font-size: 20px;
+  }
+  .toDoBox li span {
+    font-size: 23px;
+  }
+  .weather {
+    font-size: 23px;
+    text-align: right;
+    margin-left: 0;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .clock h3 {
+    margin-top: 110px;
+    font-size: 40px;
+  }
+  .clock h1 {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  .toDoList {
+    margin-left: 150px;
+  }
+  .toDoBox {
+    text-align: left;
+    display: block;
+    width: auto;
+    max-height: 350px;
+  }
+  .toDoBox input {
+    font-size: 15px;
+  }
+  .toDoBox button {
+    font-size: 15px;
+  }
+  .toDoBox li span {
+    font-size: 23px;
+  }
+  .weather {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .clock h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .clock h1 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  .toDoBox {
+    text-align: center;
+    display: block;
+    width: auto;
+    max-height: 100px;
+  }
+  .toDoBox input {
+    font-size: 20px;
+  }
+  .toDoBox button {
+    font-size: 20px;
+  }
+  .toDoBox li span {
+    font-size: 23px;
+  }
+  .weather {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 0;
+  }
+}
